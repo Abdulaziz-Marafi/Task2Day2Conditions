@@ -24,6 +24,8 @@ else
 {
     Console.WriteLine("Merhaba " + name);
 }
+Console.WriteLine("----------------------------------------------\n");
+
 
 // Max Number
 
@@ -44,6 +46,7 @@ else
     Console.WriteLine(num2+ " is larger than "+ num1);
 }
 
+Console.WriteLine("----------------------------------------------\n");
 
 // Mark
 Console.WriteLine("Please enter your mark: ");
