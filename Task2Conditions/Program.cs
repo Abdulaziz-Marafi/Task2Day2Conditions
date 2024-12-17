@@ -20,9 +20,12 @@ else if (language == "fr")
 {
     Console.WriteLine("Bonjour " + name);
 }
-else
+else if (language == "tr")
 {
     Console.WriteLine("Merhaba " + name);
+}else
+{
+    Console.WriteLine("The lanuage entered is not supported.");
 }
 Console.WriteLine("----------------------------------------------\n");
 
@@ -31,15 +34,19 @@ Console.WriteLine("----------------------------------------------\n");
 
 Console.WriteLine("Please enter a number: ");
 Console.WriteLine("--------------------- ");
-double num1 = Convert.ToInt32(Console.ReadLine());
+int num1 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Please enter another number: ");
 Console.WriteLine("--------------------- ");
-double num2 = Convert.ToInt32(Console.ReadLine());
+int num2 = Convert.ToInt32(Console.ReadLine());
 
 if (num1 > num2)
 {
     Console.WriteLine(num1+ " is larger than "+ num2);
+} 
+else if (num1 == num2)
+{
+    Console.WriteLine("The two numbers are equal.");
 }
 else
 {
@@ -51,21 +58,24 @@ Console.WriteLine("----------------------------------------------\n");
 // Mark
 Console.WriteLine("Please enter your mark: ");
 Console.WriteLine("---------------------- ");
-var mark = Convert.ToInt32(Console.ReadLine());
+int mark = Convert.ToInt32(Console.ReadLine());
 
-if (mark >= 80)
+if (mark >= 80 && mark <= 100)
 {
     Console.WriteLine("You got an A.");
-}else if (mark >= 70)
+}else if (mark >= 70 && mark < 80)
 {
     Console.WriteLine("You got a B.");
-}else if (mark >= 60)
+}else if (mark >= 60 && mark < 70)
 {
     Console.WriteLine("You got a C.");
-}else if (mark >= 50)
+}else if (mark >= 50 && mark < 60)
 {
     Console.WriteLine("You got a D.");
-}else
+}else if (mark >= 0 && mark < 50)
 {
     Console.WriteLine("You got an F.");
+}else
+{
+    Console.WriteLine("The entered mark is incorrect.");
 }
