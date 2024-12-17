@@ -50,7 +50,7 @@ Console.WriteLine("Please enter your mark: ");
 Console.WriteLine("---------------------- ");
 var mark = Convert.ToInt32(Console.ReadLine());
 
-if (mark >= 88)
+if (mark >= 80)
 {
     Console.WriteLine("You got an A.");
 }else if (mark >= 70)
